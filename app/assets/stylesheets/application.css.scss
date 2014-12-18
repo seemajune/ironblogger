@@ -16,6 +16,30 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
- .logo {
- cursor: pointer;
+ h1.logo {
+   cursor: pointer;
+   color: #999;
  }
+
+h3.logo {
+   cursor: pointer;
+   color: #003366;
+ }
+
+ h1 {
+ color: #777;
+ border-bottom: 1px dotted #33FFCC;
+ }
+
+body {
+  background-color: #eee;
+}
+
+.container {
+  width: 80%;
+  margin-left: 5%;
+}
+
+p, ul, li {
+  padding: 1%;
+}

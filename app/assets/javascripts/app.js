@@ -22,8 +22,15 @@ Ironblogger.Post = DS.Model.extend({
 });
 
 Ironblogger.PostsController = Ember.ArrayController.extend({
-  postCount: function() {
-    return this.get('model.length');
-  }.property('model.length') // if we pass an argument ('model.length'), it will update dynamically
+  postCount: Ember.computed.alias('model.length')
+  // postCount: function() {
+  //   return this.get('model.length');
+  // }.property('model.length') // if we pass an argument ('model.length'), it will update dynamically
 })
 //valid data types are string, number, boolean, and date
+// view specific models: presenter or view model
+// property: acts like a property not a function
+// updates when arguement to property changes
+
+
+/// 
