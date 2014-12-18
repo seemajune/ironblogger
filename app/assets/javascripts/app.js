@@ -24,6 +24,6 @@ Ironblogger.Post = DS.Model.extend({
 Ironblogger.PostsController = Emeber.ArrayConteoller.extrend({
   postCount: function() {
     return this.get('model.length');
-  }.property(); // if we pass an argument ('model.length'), it will update dynamically
+  }.property('model.length'); // if we pass an argument ('model.length'), it will update dynamically
 });
 //valid data types are string, number, boolean, and date
